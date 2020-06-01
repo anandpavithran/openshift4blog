@@ -1,6 +1,4 @@
 #!/bin/bash
-cp -rvf /root/openshift4blog/{default,haproxy.cfg,install-config.yaml,step*,tmpws.service} /root/project/
-cd /root/project
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable-4.4/openshift-client-linux-4.4.4.tar.gz 
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable-4.4/openshift-install-linux-4.4.4.tar.gz 
 wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.4/4.4.3/rhcos-4.4.3-x86_64-installer.x86_64.iso 
