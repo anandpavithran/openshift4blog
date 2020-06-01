@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 5
 HAIP=$(virsh domifaddr "gls-lb" | grep ipv4 | head -n1 | awk '{print $4}' | cut -d'/' -f1)
 HAMAC=$(virsh domifaddr "gls-lb" | grep ipv4 | head -n1 | awk '{print $2}')
 echo "local=/gls.test/" > /etc/NetworkManager/dnsmasq.d/gls.conf
